@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar color="yanbao">
+        <ion-buttons start>
+          <button ion-button icon-only (click)="goToBackPage()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-title center>下线通知</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row class="promptText">
+            <ion-col text-left>
+                您好，因您的帐号已在其它端（斗拍APP或其它微信）登录，您已经被迫下线，点击登录后，其它端将下线。
+            </ion-col>
+        </ion-row>
+        <ion-row class="loginAgain">
+            <ion-col text-center>
+                <button (click)="loginAgain()">重新登录</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

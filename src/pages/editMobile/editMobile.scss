@@ -1,0 +1,61 @@
+page-editMobile {
+    ion-content{
+        background:#e5e5e5 !important;
+    }
+    ion-list{
+        margin:0 !important;
+    }
+    .mobilePhone{
+        background: #fff;
+        span{
+            float: left;
+            height:40px;
+            line-height: 40px;
+            font-size: 16px;
+            padding-left:10px;
+        }
+        ion-input{
+            float: left;
+            margin-left:20px;
+            width:220px !important;
+        }
+    }
+    .smsCode{
+        background: #fff;
+        margin-top:1px;
+        span{
+            float: left;
+            height:40px;
+            line-height: 40px;
+            font-size: 16px;
+            padding-left:10px;
+        }
+        ion-input{
+            float: left;
+            margin-left:20px;
+            width:120px !important;
+        }
+        button{
+            float: left;
+            width:auto;
+            height:30px;
+            line-height: 30px;
+            font-size: 12px;
+            padding:0 10px 0 10px;
+            margin-top:5px;
+            background:#ff651e;
+            color:#fff;
+            border-radius:5px;
+        }
+    }
+    .bindPhone{
+        margin-top:20px;
+        button{
+            background:#ff651e;
+            width:95%;
+            color:#fff;
+            height:35px;
+            font-size: 16px;
+        }
+    }
+}

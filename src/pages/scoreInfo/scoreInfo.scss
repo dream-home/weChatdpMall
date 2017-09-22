@@ -1,0 +1,26 @@
+page-scoreInfo {
+    .nullPage{
+        text-align: center;
+    }
+    .remark{
+        font-size: 14px;
+        padding-left: 10px;
+        word-break: normal;
+        white-space: normal;
+    }
+    .score_date{
+        padding-left: 10px;
+        margin-top:5px;
+        .score{
+            float: left;
+            font-size: 14px;
+            color:#000;
+            font-weight: normal;
+        }
+        .date{
+            float:right;
+            font-size: 14px;
+            color:#999;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+
+<ion-content>
+    <ion-grid style="height:100%;background: linear-gradient(to bottom, #FF651E 0%,#ee761e 30%,#f3941e 100%);">
+       
+       <ion-row>
+           <ion-col style="color:#fff; font-size:2rem; font-family: 'Microsoft Yahei'; letter-spacing: 2px; padding:100px 5px 10px 5px;" text-center>
+            全球分享型移动电商平台
+           </ion-col>
+       </ion-row>
+       <ion-row>
+           <ion-col no-padding style="color:#fff; font-size:1.6rem; font-family: 'Microsoft Yahei'; letter-spacing: 2px;" text-center>
+                一个会帮你赚钱的商城<br/>只要分享，就能赚钱！
+           </ion-col>
+       </ion-row> 
+        <ion-row>
+            <ion-col padding-vertical text-center>
+                <div style="width:45%; padding:8px; margin: 0 auto; position: relative;">
+                     <img src="{{shopData.qrcodeUrl}}" style="width:100%;"  *ngIf="shopData!=null">
+                     <span style="display: block;position: absolute;top: 0; left: 0; width: 10px; height: 10px;
+                     border-top:2px solid #fff;border-left:2px solid #fff; z-index: 2;"></span>
+                      <span style="display: block;position: absolute;top: 0; right: 0; width: 10px; height:10px;
+                     border-top:2px solid #fff;border-right:2px solid #fff; z-index: 2;"></span>
+
+                      <span style="display: block;position: absolute;bottom:0; left: 0; width:10px; height:10px;
+                     border-bottom:2px solid #fff;border-left:2px solid #fff; z-index: 2;"></span>
+                      <span style="display: block;position: absolute;bottom:0; right:0; width:10px; height:10px;
+                     border-bottom:2px solid #fff;border-right:2px solid #fff; z-index: 2;"></span>
+                </div>
+
+            </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col no-padding style="color:#fff; font-size:1.6rem; font-family: 'Microsoft Yahei';" text-center>
+                长按识别二维码<br/>关注公众号进入微信店铺！
+           </ion-col>
+       </ion-row> 
+    </ion-grid>
+</ion-content>
+<ion-footer>
+
+</ion-footer>

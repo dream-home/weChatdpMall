@@ -1,0 +1,62 @@
+<ion-header>
+    <ion-toolbar color="yanbao">
+        <ion-buttons start>
+          <button ion-button icon-only (click)="goToBackPage()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-title center>用户信息</ion-title>
+    </ion-toolbar>
+</ion-header> 
+
+<ion-content background="background:#f4f4f4">
+  <div *ngIf="userInfo!=null">
+      <ion-list style="margin-bottom:10px;" class="person_info" >
+          <div ion-item class="headPortrait">
+              头像
+             <div item-right>
+                  <img src="{{userInfo.headImgUrl}}"/>
+             </div>
+          </div>
+          <button ion-item  (click)="gotoChangeUserNamePage()" class="nickName">
+              昵称<span item-right >{{userInfo.nickName}}</span>
+          </button>
+          <button class="uid">
+              <span>UID</span>
+              <span item-right>{{userInfo.uid}}</span>
+          </button>
+          <button class="area" *ngIf="userInfo.areaId!=null && userInfo.areaId!='' ">
+              <span>所在地区</span>
+              <span item-right>{{userInfo.province}}{{userInfo.city}}{{userInfo.county}}</span>
+          </button>
+      </ion-list>
+      <ion-list style="margin-bottom:10px;" class="person_info" >
+           <button ion-item class="telPhone" *ngIf="userInfo.phone!=null && userInfo.phone!=''" (click)="bindMobile(userInfo.phone)">
+              <span>手机</span>
+              <span item-right style="color:#999;">{{userInfo.phone}}</span>
+           </button>
+           <button class="unbindTelPhone" *ngIf="userInfo.phone==null || userInfo.phone==''">
+              <span>手机</span>
+              <span item-right style="color:#FF651E;">未绑定</span>
+           </button>
+           <button class="weChat">
+              <span>微信</span>
+              <span item-right style="color:#FF651E;" >已绑定</span>
+             <!--  <span item-right style="margin:0 -15px 0 0;color:#FF651E;" *ngIf="userInfo.isBindWeixin==0" >未绑定</span> -->
+          </button>
+      </ion-list>
+      <ion-list style="margin-bottom:10px;" *ngIf="userInfo.isSetPassword==1">
+           <button ion-item (click)="settingLoginPw()" class="loginPwd">
+              登录密码<span item-right>修改</span>
+          </button>
+          <button ion-item (click)="settingPayPw()" *ngIf="userInfo.isSetPayPwd==1" class="payPwd">
+              支付密码<span item-right>修改</span>
+          </button>
+      </ion-list>
+      <ion-list *ngIf="show" class="perfectData">
+          <button ion-item (click)="gotoPerfectUserDataPage()">
+             完善资料
+          </button>
+      </ion-list>
+  </div>
+</ion-content>

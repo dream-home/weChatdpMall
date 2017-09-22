@@ -1,0 +1,26 @@
+page-referrals{
+    ion-content{
+        background:url("../assets/images/referrals.png") no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        .promptText{
+            margin-top:100px;
+            color:#ff651e;
+            font-size: 12px;
+            text-indent: 25px;
+            padding:5px 40px;
+            line-height: 18px;
+        }
+        .loginAgain{
+            padding:5px 40px;
+            margin-top:60px;
+            button{
+                height:25px;
+                width:100%;
+                background:#ff651e;
+                color:#fff;
+                border-radius:12px;
+            }
+        }
+    }
+}

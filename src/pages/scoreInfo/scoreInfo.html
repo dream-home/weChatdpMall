@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar color="yanbao">
+        <ion-buttons start>
+          <button ion-button icon-only (click)="goToBackPage()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-title center>{{title}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="items==null || items.length==0" class="nullPage">
+        <img src="assets/images/null.png">
+    </div>
+    <ion-list>
+        <ion-item *ngFor="let itm of items" no-margin no-padding>
+            <div class="remark">{{itm.remark}}</div>
+            <div class="score_date">
+                <span class="score" *ngIf="12==itm.recordType || 14==itm.recordType || 21==itm.recordType">{{itm.score}}EP</span>
+                <span class="score" *ngIf="12!=itm.recordType && 14!=itm.recordType && 21!=itm.recordType">{{itm.score}}余额</span>
+                <span class="date">{{commonService.dateFormatLong(itm.createTime,'yyyy-MM-dd HH:mm')}}</span>
+            </div>
+        </ion-item>
+    </ion-list>
+    <ion-infinite-scroll *ngIf="showScroll" (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

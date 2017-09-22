@@ -1,0 +1,37 @@
+page-findPayPwd{
+    ion-content{
+        background:#e5e5e5 !important;
+    }
+    .phone_code{
+        .telPhone,.imgCode{
+            border:0 !important;
+            font-size: 14px;
+            ion-input{
+                font-size: 14px;
+                margin-top:3px;
+            }
+        }
+    }
+    .loadMsg,.subData{
+        button{
+            height:30px;
+        }
+    }
+    .setPwd{
+        ion-item{
+            border:0 !important;
+            ion-label{
+                flex: 0 0 80px;
+                width:80px;
+                min-width:80px;
+                max-width:80px;
+                font-size: 14px;
+                margin:0 !important;
+            }
+            ion-input{
+                font-size: 14px;
+                margin-top:3px;
+            }
+        }
+    }
+}

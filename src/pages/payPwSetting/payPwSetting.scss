@@ -1,0 +1,100 @@
+page-payPwSetting {
+    ion-content{
+        background:#e5e5e5 !important;
+        ion-grid{
+            padding:0 !important;
+            .prompt{
+                background:#fff;
+                ion-col{
+                    text-align: center;
+                    color:red;
+                    font-size: 14px;
+                    padding:8px 5px;
+                }
+            }
+            .oldPwd{
+                background:#fff;
+                margin-top:1px;
+                ion-col{
+                    padding:5px 5px 5px 15px;
+                    span{
+                        float:left;
+                        width:70px;
+                        height:40px;
+                        line-height: 40px;
+                    }
+                    ion-input{
+                        float:left;
+                        width:220px;
+                        height:40px;
+                        line-height: 40px;
+                        input{
+                            margin:0 !important;
+                        }
+                    }
+                }
+            }
+            .newPwd{
+                background:#fff;
+                margin-top:1px;
+                ion-col{
+                    padding:5px 5px 5px 15px;
+                    span{
+                        float:left;
+                        width:70px;
+                        height:40px;
+                        line-height: 40px;
+                    }
+                    ion-input{
+                        float:left;
+                        width:220px;
+                        height:40px;
+                        line-height: 40px;
+                        input{
+                            margin:0 !important;
+                        }
+                    }
+                }
+            }
+            .comfimPwd{
+                background:#fff;
+                margin-top:1px;
+                ion-col{
+                    padding:5px 5px 5px 15px;
+                    span{
+                        float:left;
+                        width:70px;
+                        height:40px;
+                        line-height: 40px;
+                    }
+                    ion-input{
+                        float:left;
+                        width:220px;
+                        height:40px;
+                        line-height: 40px;
+                        input{
+                            margin:0 !important;
+                        }
+                    }
+                }
+            }
+            .subBtn{
+                margin-top:20px;
+                ion-col{
+                    text-align: center;
+                    button{
+                        width:95%;
+                        height:30px;
+                    }
+                }
+            }
+            .forgetPwd{
+                button{
+                    background:none;
+                    color:red;
+                    float:right;
+                }
+            }
+        }
+    }
+}

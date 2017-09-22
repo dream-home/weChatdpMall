@@ -1,0 +1,19 @@
+page-storeNotExistent{
+    .storeNotExistent{
+        ion-row:nth-child(1){
+            margin-top:100px;
+            ion-col{
+                img{
+                    width:150px;
+                }
+            }
+        }
+        ion-row:nth-child(2){
+            margin-top:10px;
+            ion-col{
+                color:#999;
+                font-size: 16px;
+            }
+        }
+    }
+}

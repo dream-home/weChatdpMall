@@ -1,0 +1,83 @@
+page-shareFriend {
+
+	.item-ios {
+	  color: #fff;
+	  background:none;
+	}
+	.list-ios .item-block .item-inner {
+	    border-bottom:0 solid #c8c7cc;
+	}
+	.list-header-ios {
+	  
+	    border-bottom: 0 solid #c8c7cc;
+	}
+	.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+	    border-bottom: 0 solid #c8c7cc;
+	}
+
+	.item-ios .radio-ios {
+	  position: static;
+	  display: block;
+	  margin:5px 11px 5px 8px;
+	}
+	.item-block{
+   			min-height:0;
+	}
+.item-radio-checked.item-ios ion-label {
+  color: #ffea77;
+}
+
+.item-radio-ios-primary.item-radio-checked ion-label {
+  color: #ffea77;
+}
+
+.radio-ios-primary .radio-checked {
+  color:#ffea77;
+}
+
+.radio-ios-primary .radio-checked .radio-inner {
+  border-color: #ffea77;
+}
+
+.radio-ios .radio-checked .radio-inner {
+ 
+  border-color: #ffea77;
+}
+.promptShare{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.5);
+        z-index:999;
+        .promptShareCnt{
+            position:absolute;
+            top:0;
+            left:0;
+            background: #178fe3;
+            text-align: center;
+            height:44px;
+            width: 100%;
+            .jiantou{
+                float: right;
+                margin-left:5px;
+                margin-right:5px;
+                height:36px;
+            }
+            .circle_of_friends{
+                float: right;
+                height:40px;
+                margin-top:2px;
+            }
+            span{
+                float: right;
+                height:44px;
+                color:#fff;
+                font-size: 14px;
+                line-height: 44px;
+                margin-left:5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="yanbao">
+        <ion-buttons start>
+          <button ion-button icon-only (click)="goToBackPage()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-title center>设置登录密码</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row class="oldPwd">
+            <ion-col>
+                <span>旧密码</span>
+                <ion-input [disabled]="true" type="password" *ngIf="commonService.user.isSetPassword=='0'" placeholder="未设置"></ion-input>
+                <ion-input maxlength="15" type="password" bindon-ngModel="oldPwd" placeholder="输入旧密码" *ngIf="commonService.user.isSetPassword=='1'"></ion-input>
+            </ion-col>
+        </ion-row>
+        <ion-row class="newPwd">
+            <ion-col>
+                <span>新密码</span>
+                <ion-input maxlength="15" type="password" bindon-ngModel="newPwd" placeholder="输入新密码"></ion-input>
+            </ion-col>
+        </ion-row>
+        <ion-row class="comfimPwd">
+            <ion-col>
+                <span>确认密码</span>
+                <ion-input maxlength="15" type="password" bindon-ngModel="newPwd2" placeholder="输入确认密码"></ion-input>
+            </ion-col>
+        </ion-row>
+        <ion-row class="subBtn">
+            <ion-col>
+                <button ion-button (click)="submitData()">确定</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
